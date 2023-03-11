@@ -2193,7 +2193,7 @@ class CBAM(nn.Module):
 # https://github.com/northBeggar/Plug-and-Play/blob/main/GAM%20attention.py
 class GAM(nn.Module):
     def __init__(self, in_channels, out_channels, rate=4):
-        super(GAM_Attention, self).__init__()
+        super(GAM, self).__init__()
 
         self.channel_attention = nn.Sequential(
             nn.Linear(in_channels, int(in_channels / rate)),
